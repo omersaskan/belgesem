@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "Forklift",
             desc: "Depolama ve lojistik sektörünün aranan operatörü olun. Dar alanlarda yüksek manevra kabiliyeti.",
-            model: "https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/forklift.glb" // Realistic Forklift
+            model: "assets/models/forklift.glb" // Local Realistic Forklift
         },
         {
             title: "Manlift",
