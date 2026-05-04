@@ -260,32 +260,32 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "Ekskavatör",
             desc: "Hafriyat ve kazı işlerinin vazgeçilmez gücü. 360 derece dönebilme ve yüksek kazı kapasitesi ile şantiyelerin kalbi.",
-            model: "https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+            model: "assets/models/excavator.glb" // User should place their .glb here
         },
         {
             title: "Beko Loder",
             desc: "Kanal kazıma ve yükleme operasyonlarında uzmanlık. Hem kazıcı hem de yükleyici özellikleri ile çok yönlü kullanım.",
-            model: "https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+            model: "assets/models/backhoe.glb"
         },
         {
             title: "Dozer",
             desc: "Arazi tesviyesi ve ağır itme güçleri için profesyonel eğitim. En zorlu zemin şartlarında üstün performans.",
-            model: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"
+            model: "assets/models/bulldozer.glb"
         },
         {
             title: "Greyder",
             desc: "Yol yapımı ve yüzey düzleme sanatında uzmanlaşın. Hassas bıçak kontrolü ile mükemmel yüzey kalitesi.",
-            model: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb"
+            model: "assets/models/grader.glb"
         },
         {
             title: "Forklift",
             desc: "Depolama ve lojistik sektörünün aranan operatörü olun. Dar alanlarda yüksek manevra kabiliyeti.",
-            model: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/ToyCar/glTF-Binary/ToyCar.glb"
+            model: "https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/forklift.glb" // Realistic Forklift
         },
         {
             title: "Manlift",
             desc: "Yüksekte güvenli çalışma ve manlift kullanımı. Personel yükseltme platformlarında emniyetli operasyon.",
-            model: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/SheenChair/glTF-Binary/SheenChair.glb"
+            model: "assets/models/manlift.glb"
         }
     ];
 
