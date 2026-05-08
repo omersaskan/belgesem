@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BELGESEM | Mesleki Eğitim ve İş Makinaları Operatörlük Kursu</title>
-    <meta name="description" content="Belgesem, profesyonel iş makinesi operatörlüğü ve mesleki belgelendirme eğitimleri sunan öncü bir kuruluştur.">
+    <meta name="description"
+        content="Belgesem, profesyonel iş makinesi operatörlüğü ve mesleki belgelendirme eğitimleri sunan öncü bir kuruluştur.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-<body>
+
+<body class="">
     <div class="scroll-progress"></div>
     <div id="loader">
         <div class="loader-content">
@@ -23,18 +29,34 @@
     <div class="bg-noise"></div>
     <div class="bg-blob blob-1"></div>
     <div class="bg-blob blob-2"></div>
-    
+
     <header id="main-header">
         <nav class="container">
             <div class="logo">
-                <a href="#">BELGESEM</a>
+                <a href="#"><img src="assets/logo.png" alt="BELGESEM Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">Kurumsal</a></li>
-                <li><a href="#services">Hizmetlerimiz</a></li>
-                <li><a href="#machinery">İş Makinaları</a></li>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#contact">İletişim</a></li>
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" style="cursor: default;">Belgesem'e Bakış <i
+                            data-lucide="chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="biz-kimiz.html">Biz Kimiz</a></li>
+                        <li><a href="kadromuz.html">Kadromuz</a></li>
+                        <li><a href="galeri.html">Fotoğraf Galerisi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" style="cursor: default;">Eğitimlerimiz <i
+                            data-lucide="chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="is-makinesi.html">İş Makinesi Operatörlüğü</a></li>
+                        <li><a href="tarim-makinesi.html">Tarım Makinası Operatörlüğü</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer-social">Sosyal Medyada Biz</a></li>
+                <li><a href="#references">Referanslarımız</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-small">Online Başvuru</a></li>
             </ul>
 
             <button class="mobile-menu-toggle">
@@ -50,7 +72,8 @@
             <div class="hero-content">
                 <span class="hero-tag fade-in">2011'den Beri Öncü Mükemmellik</span>
                 <h1 class="fade-in">Geleceğin <br><span class="gradient-text">Uzmanlarını Yetiştiriyoruz</span></h1>
-                <p class="fade-in-delayed">Modern iş gücü için birinci sınıf mesleki eğitim. Her oturumda hassasiyet, güvenlik ve uzmanlık.</p>
+                <p class="fade-in-delayed">Modern iş gücü için birinci sınıf mesleki eğitim. Her oturumda hassasiyet,
+                    güvenlik ve uzmanlık.</p>
                 <div class="hero-btns fade-in-delayed">
                     <a href="#services" class="btn btn-primary btn-large">Eğitimleri Gör</a>
                     <a href="#contact" class="btn btn-outline btn-large">Bize Ulaşın</a>
@@ -65,27 +88,7 @@
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="editorial-watermark">History</div>
-            <div class="container grid grid-2">
-                <div class="about-text">
-                    <span class="section-tag">Hakkımızda</span>
-                    <h2>Tecrübe ve Uzmanlıkla <br><span class="gradient-text">Mesleki Eğitim</span></h2>
-                    <p>Belgesem olarak, iş dünyasının ihtiyaç duyduğu kalifiye personeli yetiştirmek amacıyla modern eğitim metodları ve uzman kadromuzla hizmet veriyoruz. İş makinesi operatörlüğünden mesleki belgelendirmeye kadar geniş bir yelpazede çözümler sunuyoruz.</p>
-                    <ul class="features-list">
-                        <li>Modern Eğitim Ekipmanları</li>
-                        <li>Uzman ve Deneyimli Eğitmenler</li>
-                        <li>Sektörel Standartlarda Müfredat</li>
-                        <li>Resmi Onaylı Sertifika Programları</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop" alt="Belgesem Teknik Eğitim" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
-                </div>
-            </div>
-        </section>
-
-        <section id="stats" class="section py-80">
+        <section id="stats" class="section py-20">
             <div class="container">
                 <div class="grid grid-4 gap-30 reveal-container">
                     <div class="stat-card">
@@ -120,179 +123,155 @@
             </div>
         </section>
 
-        <section id="services" class="section bg-dark">
+        <section id="references" class="section bg-dark overflow-hidden py-20">
             <div class="container">
-                <div class="section-header text-center reveal-container">
-                    <span class="section-tag">Uzmanlığı Keşfedin</span>
-                    <h2>Mesleki Belgelendirme</h2>
+                <div class="section-header text-center mb-30">
+                    <span class="section-tag">Güven ve Tecrübe</span>
+                    <h2>Bize Güvenen <span class="gradient-text">Referanslarımız</span></h2>
                 </div>
-                <div class="services-bento reveal-container">
-                    <div class="bento-item large">
-                        <div class="card-icon"><i data-lucide="home"></i></div>
-                        <h3>Emlak Danışmanlığı <br>Uzmanlığı</h3>
-                        <p>Sertifikalı gayrimenkul danışmanlığı ve yönetimi programları (Seviye 5).</p>
-                        <a href="#" class="read-more">Daha Fazla Bilgi <i data-lucide="arrow-up-right"></i></a>
+                <div class="references-container reveal-container">
+                    <!-- Row 1 -->
+                    <div class="references-slider">
+                        <div class="references-track fast">
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image1.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image10.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image100.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image101.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image102.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image103.jpeg"
+                                    alt="Referans"></div>
+                            <!-- Duplicated -->
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image1.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image10.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image100.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image101.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image102.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image103.jpeg"
+                                    alt="Referans"></div>
+                        </div>
                     </div>
-                    <div class="bento-item medium">
-                        <div class="card-icon"><i data-lucide="truck"></i></div>
-                        <h3>Lojistik Uzmanlığı</h3>
-                        <p>İleri düzey forklift ve ağır yük taşıma sertifikasyonu.</p>
-                        <a href="#" class="read-more">Daha Fazla Bilgi <i data-lucide="arrow-up-right"></i></a>
+                    <!-- Row 2 (Reverse) -->
+                    <div class="references-slider">
+                        <div class="references-track reverse slow">
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image104.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image105.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image106.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image107.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image108.gif"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image109.png"
+                                    alt="Referans"></div>
+                            <!-- Duplicated -->
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image104.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image105.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image106.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image107.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image108.gif"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image109.png"
+                                    alt="Referans"></div>
+                        </div>
                     </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="car"></i></div>
-                        <h3>Otomotiv</h3>
-                        <p>Galeri ve satış sorumlusu eğitimi.</p>
-                        <a href="#" class="read-more">Detaylar <i data-lucide="arrow-up-right"></i></a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="box"></i></div>
-                        <h3>Vinç Op.</h3>
-                        <p>Profesyonel tavan vinci operatörü sertifikasyonu.</p>
-                        <a href="#" class="read-more">Detaylar <i data-lucide="arrow-up-right"></i></a>
+                    <!-- Row 3 -->
+                    <div class="references-slider">
+                        <div class="references-track">
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image11.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image110.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image111.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image112.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image113.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image114.jpeg"
+                                    alt="Referans"></div>
+                            <!-- Duplicated -->
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image11.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image110.png"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image111.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image112.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image113.jpeg"
+                                    alt="Referans"></div>
+                            <div class="reference-item"><img src="assets/referanslarımız/logos/image114.jpeg"
+                                    alt="Referans"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="machinery-intro" class="parallax-section mini">
-            <img src="assets/machinery-bg.jpg" class="parallax-bg" alt="İş Makinaları">
-            <div class="overlay"></div>
-            <div class="container text-center">
-                <h2>İş Makinesi Operatörlüğü</h2>
-                <p>Güçlü makinaları kontrol etmek sizin elinizde.</p>
-            </div>
-        </section>
 
-        <section id="machinery" class="section">
-            <div class="editorial-watermark">Machines</div>
+        <section id="contact" class="section py-80">
             <div class="container">
-                <div class="machinery-grid grid grid-3 reveal-container">
-                    <div class="machinery-item">
-                        <img src="assets/excavator.jpg" alt="Ekskavatör">
-                        <div class="item-overlay">
-                            <h3>Ekskavatör</h3>
-                            <p>Hafriyat ve kazı işlerinin vazgeçilmez gücü.</p>
-                        </div>
-                    </div>
-                    <div class="machinery-item">
-                        <img src="assets/loader.jpg" alt="Beko Loder">
-                        <div class="item-overlay">
-                            <h3>Beko Loder</h3>
-                            <p>Kanal kazıma ve yükleme operasyonlarında uzmanlık.</p>
-                        </div>
-                    </div>
-                    <div class="machinery-item">
-                        <img src="assets/dozer.jpg" alt="Dozer">
-                        <div class="item-overlay">
-                            <h3>Dozer</h3>
-                            <p>Arazi tesviyesi ve ağır itme güçleri için profesyonel eğitim.</p>
-                        </div>
-                    </div>
-                    <div class="machinery-item">
-                        <img src="assets/grader.jpg" alt="Greyder">
-                        <div class="item-overlay">
-                            <h3>Greyder</h3>
-                            <p>Yol yapımı ve yüzey düzleme sanatında uzmanlaşın.</p>
-                        </div>
-                    </div>
-                    <div class="machinery-item">
-                        <img src="assets/forklift-training.jpg" alt="Forklift">
-                        <div class="item-overlay">
-                            <h3>Forklift</h3>
-                            <p>Depolama ve lojistik sektörünün aranan operatörü olun.</p>
-                        </div>
-                    </div>
-                    <div class="machinery-item">
-                        <img src="assets/manlift.jpg" alt="Manlift">
-                        <div class="item-overlay">
-                            <h3>Manlift</h3>
-                            <p>Yüksekte güvenli çalışma ve manlift kullanımı.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-50">
-                    <a href="#" class="btn btn-outline">Tüm Operatörlükleri Gör</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section py-60">
-            <div class="container">
-                <div class="section-header text-center mb-80">
-                    <span class="section-tag">İletişim</span>
+                <div class="section-header text-center mb-60">
+                    <span class="section-tag">İletişim Bilgilerimiz</span>
                     <h2>Kariyeriniz İçin <span class="gradient-text">Bize Ulaşın</span></h2>
                 </div>
-                
-                <div class="contact-grid grid grid-2">
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i data-lucide="map-pin"></i>
-                            </div>
-                            <div class="info-text">
-                                <h4>Merkez Ofis</h4>
-                                <p>Efeler, Aydın / Türkiye</p>
-                            </div>
+
+                <div class="contact-card-wrapper">
+                    <div class="contact-details">
+                        <div class="corporate-info">
+                            <h3>BELGESEM</h3>
+                            <p class="mb-30">Aydın'ın lider mesleki eğitim merkezi olarak, profesyonel kadromuzla
+                                yanınızdayız.</p>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i data-lucide="phone"></i>
-                            </div>
-                            <div class="info-text">
-                                <h4>Bizi Arayın</h4>
-                                <p>(0256) 212 87 87</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i data-lucide="mail"></i>
-                            </div>
-                            <div class="info-text">
-                                <h4>E-Posta</h4>
-                                <p>info@belgesem.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-map mt-40">
-                            <div class="map-placeholder">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100774.96637380145!2d27.75887220083238!3d37.84813589988544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be2df63e3d489b%3A0xc48c1871a9f0e13!2sEfeler%2C%20Ayd%C4%B1n!5e0!3m2!1str!2str!4v1714810000000!5m2!1str!2str" 
-                                    width="100%" height="300" style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2) opacity(0.8); border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form-wrapper">
-                        <form id="contact-form">
-                            <div class="form-row grid grid-2">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Adınız" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Soyadınız" required>
+
+                        <div class="info-grid grid grid-3 gap-20">
+                            <div class="info-item-new">
+                                <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                                <div class="text-box">
+                                    <span>Adresimiz</span>
+                                    <p>Ata Mah. 605 Sk. No:5 Astim OSB, Efeler / AYDIN</p>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="E-Posta Adresiniz" required>
+                            <div class="info-item-new">
+                                <div class="icon-box"><i data-lucide="phone"></i></div>
+                                <div class="text-box">
+                                    <span>Bizi Arayın</span>
+                                    <p>(0256) 212 87 87</p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="tel" placeholder="Telefon Numaranız" required>
+                            <div class="info-item-new">
+                                <div class="icon-box"><i data-lucide="mail"></i></div>
+                                <div class="text-box">
+                                    <span>E-Posta Adresimiz</span>
+                                    <p>info@belgesem.com</p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <select required>
-                                    <option value="" disabled selected>İlgilendiğiniz Eğitim</option>
-                                    <option value="is-makinesi">İş Makinesi Operatörlüğü</option>
-                                    <option value="belgelendirme">Mesleki Belgelendirme</option>
-                                    <option value="tarim">Tarım Makinaları</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Mesajınız" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block btn-large">Hemen Başvurun</button>
-                        </form>
+                        </div>
+
+                        <div class="map-container mt-40">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.3771685442516!2d27.8670872!3d37.8280552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b92b68532a2099%3A0x2eb2098c8e770d55!2sBELGESEM%20%C4%B0%C5%9F%20ve%20Tar%C4%B1m%20Makineleri%20Oper%C3%B6r%20Yeti%C5%9Ftirme%20%26%20Belgelendirme%20Kursu!5e0!3m2!1str!2str!4v1778239970004!5m2!1str!2str"
+                                width="100%" height="450"
+                                style="border:0; border-radius: 20px; filter: grayscale(1) opacity(0.8);"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -301,59 +280,70 @@
     <footer>
         <div class="container footer-grid">
             <div class="footer-item footer-about">
-                <h3>BELGESEM</h3>
-                <p>Aydın'ın öncü mesleki eğitim merkezi.</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <div class="footer-logo mb-20">
+                    <img src="assets/logo.png" alt="BELGESEM Logo"
+                        style="height: 40px; filter: brightness(0) saturate(100%) invert(0%);">
                 </div>
+                <p>Aydın'ın lider mesleki eğitim merkezi olarak 2011'den beri geleceğin operatörlerini yetiştiriyoruz.
+                </p>
             </div>
             <div class="footer-item footer-links">
                 <h4>Hızlı Menü</h4>
                 <ul>
-                    <li><a href="#hero">Anasayfa</a></li>
-                    <li><a href="#about">Kurumsal</a></li>
-                    <li><a href="#services">Hizmetlerimiz</a></li>
-                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="index.html#hero">Anasayfa</a></li>
+                    <li><a href="bakis.html">Kurumsal</a></li>
+                    <li><a href="is-makinesi.html">Hizmetlerimiz</a></li>
+                    <li><a href="index.html#contact">İletişim</a></li>
                 </ul>
             </div>
             <div class="footer-item footer-links">
                 <h4>Eğitimlerimiz</h4>
                 <ul>
-                    <li><a href="#">Ekskavatör</a></li>
-                    <li><a href="#">Forklift</a></li>
-                    <li><a href="#">Emlak Danışmanlığı</a></li>
-                    <li><a href="#">Loder</a></li>
+                    <li><a href="is-makinesi.html">Ekskavatör</a></li>
+                    <li><a href="is-makinesi.html">Forklift</a></li>
+                    <li><a href="is-makinesi.html">Loder</a></li>
+                    <li><a href="tarim-makinesi.html">Tarım Makinası</a></li>
                 </ul>
             </div>
             <div class="footer-item footer-links">
                 <h4>Kurumsal</h4>
                 <ul>
-                    <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="#">Sertifikalarımız</a></li>
-                    <li><a href="#">İnsan Kaynakları</a></li>
-                    <li><a href="#">KVKK</a></li>
+                    <li><a href="biz-kimiz.html">Hakkımızda</a></li>
+                    <li><a href="kadromuz.html">Kadromuz</a></li>
+                    <li><a href="galeri.html">Fotoğraf Galerisi</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 BELGESEM. Tüm Hakları Saklıdır.</p>
-            <div class="footer-bottom-links">
-                <a href="#hero">Yukarı Çık &uarr;</a>
+            <div class="footer-bottom-content">
+                <div class="social-icons mb-20" id="footer-social">
+                    <a href="https://www.instagram.com/belgesemegitimmerkezi/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p>&copy; 2026 BELGESEM. Tüm Hakları Saklıdır.</p>
+                <div class="footer-bottom-links mt-10">
+                    <a href="#hero">Yukarı Çık &uarr;</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/902562128787" class="whatsapp-float" target="_blank" aria-label="WhatsApp üzerinden bizimle iletişime geçin">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <a href="https://wa.me/902562128787" class="whatsapp-float" target="_blank"
+        aria-label="WhatsApp üzerinden bizimle iletişime geçin">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+        </svg>
     </a>
 
     <div class="theme-switcher">
         <i data-lucide="palette" class="theme-icon"></i>
         <div class="custom-dropdown" id="theme-dropdown">
             <div class="dropdown-trigger">
-                <span id="current-theme-label">Varsayılan Tasarım</span>
+                <span id="current-theme-label"></span>
                 <i data-lucide="chevron-down"></i>
             </div>
             <div class="dropdown-options">
@@ -369,9 +359,8 @@
                 <div class="dropdown-option" data-value="tasarim-9">Tasarım 9</div>
                 <div class="dropdown-option" data-value="tasarim-10">Tasarım 10</div>
                 <div class="dropdown-option" data-value="tasarim-11">Tasarım 11</div>
-                <div class="dropdown-option" data-value="tasarim-12">Tasarım 12</div>
+
                 <div class="dropdown-option" data-value="tasarim-13">Tasarım 13</div>
-                <div class="dropdown-option" data-value="tasarim-14">Tasarım 14</div>
                 <div class="dropdown-option" data-value="tasarim-15">Tasarım 15</div>
                 <div class="dropdown-option" data-value="tasarim-16">Tasarım 16</div>
                 <div class="dropdown-option" data-value="tasarim-17">Tasarım 17</div>
@@ -385,14 +374,8 @@
             <button class="modal-close"><i data-lucide="x"></i></button>
             <div class="modal-body">
                 <div class="viewer-container">
-                    <model-viewer id="main-viewer" 
-                        src="" 
-                        auto-rotate 
-                        camera-controls 
-                        shadow-intensity="1" 
-                        exposure="1"
-                        interaction-prompt="auto"
-                        ar ar-modes="webxr scene-viewer quick-look">
+                    <model-viewer id="main-viewer" src="" auto-rotate camera-controls shadow-intensity="1" exposure="1"
+                        interaction-prompt="auto" ar ar-modes="webxr scene-viewer quick-look">
                         <button slot="ar-button" class="ar-btn">
                             <i data-lucide="camera"></i> AR ile Dünyanda Gör
                         </button>
@@ -413,7 +396,8 @@
 
     <script src="script.js"></script>
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
 </body>
+
 </html>

@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animateCursor();
 
     // Spotlight & 3D Tilt Effect
-    document.querySelectorAll('.service-card, .machinery-item, .bento-item').forEach(card => {
+    document.querySelectorAll('.service-card, .machinery-item, .bento-item, .team-card, .reference-item').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -139,6 +139,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Mobile Dropdown Logic
+    document.querySelectorAll('.nav-item > a').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a:not([data-lucide])').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768 && !link.parentElement.classList.contains('nav-item')) {
+                mobileMenuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+
     // Smooth Scroll for Navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -148,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const target = document.querySelector(targetId);
             if (target) {
-                const headerOffset = 100;
+                const headerOffset = 30;
                 const elementPosition = target.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -184,13 +216,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Light Mode Always
+    document.body.classList.add('light-mode');
+
     // Theme Switcher Logic
     const themeDropdown = document.getElementById('theme-dropdown');
     const themeLabel = document.getElementById('current-theme-label');
     const dropdownOptions = document.querySelectorAll('.dropdown-option');
     
     function setTheme(theme, updateURL = true) {
-        document.body.className = ''; // Reset
+        // Keep light-mode class if it exists
+        const isLight = document.body.classList.contains('light-mode');
+        document.body.className = isLight ? 'light-mode' : ''; 
+        
         if (theme !== 'default') {
             document.body.classList.add(theme);
         }
@@ -201,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (activeOption) {
             dropdownOptions.forEach(opt => opt.classList.remove('active'));
             activeOption.classList.add('active');
-            themeLabel.textContent = activeOption.textContent;
+            // themeLabel text removed for minimalist UI
         }
         
         // Update URL
@@ -222,9 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (themeDropdown) {
-        const trigger = themeDropdown.querySelector('.dropdown-trigger');
+        const switcher = document.querySelector('.theme-switcher');
         
-        trigger.addEventListener('click', (e) => {
+        switcher.addEventListener('click', (e) => {
             e.stopPropagation();
             themeDropdown.classList.toggle('open');
         });
@@ -237,21 +275,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Close dropdown when clicking outside
         document.addEventListener('click', () => {
             themeDropdown.classList.remove('open');
         });
 
-        // Load theme from URL or LocalStorage
+        // Load mode and theme
         const urlParams = new URLSearchParams(window.location.search);
         const designParam = urlParams.get('tasarim');
         const savedTheme = localStorage.getItem('selected-theme');
+        // Set Mode Always Light
+        document.body.classList.add('light-mode');
 
+        // Set Theme (Default to tasarim-1 as requested)
         if (designParam) {
             const themeValue = designParam === 'default' ? 'default' : `tasarim-${designParam}`;
             setTheme(themeValue, false);
         } else if (savedTheme) {
             setTheme(savedTheme, false);
+        } else {
+            setTheme('tasarim-1', false);
         }
     }
 
