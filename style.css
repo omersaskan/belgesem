@@ -1,22 +1,22 @@
 :root {
-    --primary: #e5b751;
-    /* Luminous Gold */
-    --primary-light: #fff8e1;
-    --primary-dark: #b8860b;
+    --primary: #00f2ff;
+    /* Original Cyber Glass Cyan */
+    --primary-light: rgba(0, 242, 255, 0.2);
+    --primary-dark: #0066ff;
     --secondary: #000000;
-    --accent-blue: #020205;
+    --accent-blue: #02050a;
     --text-light: #ffffff;
-    --text-muted: rgba(255, 255, 255, 0.5);
-    --bg-dark: #000000;
-    --bg-card: #080808;
+    --text-muted: rgba(0, 242, 255, 0.5);
+    --bg-dark: #02050a;
+    --bg-card: rgba(255, 255, 255, 0.05);
     --glass: rgba(255, 255, 255, 0.01);
-    --glass-border: rgba(255, 255, 255, 0.04);
-    --accent-gradient: linear-gradient(135deg, #e5b751 0%, #b8860b 100%);
-    --liquid-gradient: linear-gradient(90deg, #e5b751, #fff8e1, #b8860b, #e5b751);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --accent-gradient: linear-gradient(135deg, #00f2ff 0%, #0066ff 100%);
+    --liquid-gradient: linear-gradient(90deg, #00f2ff, #ffffff, #0066ff, #00f2ff);
     --transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-    --container: 1600px;
-    --header-bg: rgba(0, 0, 0, 0.8);
-    --footer-bg: #050505;
+    --container: 1280px;
+    --header-bg: rgba(2, 5, 10, 0.9);
+    --footer-bg: #010306;
 }
 
 * {
@@ -50,7 +50,7 @@
 
 .cursor-hover {
     transform: scale(3);
-    background: rgba(255, 193, 7, 0.1);
+    background: rgba(0, 242, 255, 0.1);
     border: none;
 }
 
@@ -486,7 +486,7 @@ body.tasarim-6 .editorial-watermark {
 /* Theme 7: Quiet Luxury (2025 Trend) */
 body.tasarim-7 {
     --primary: #c29d59;
-    /* Honey Gold */
+    /* Premium Industrial Blue */
     --bg-dark: #fdfcf0;
     /* Off-White/Cream */
     --text-light: #1e293b;
@@ -952,7 +952,13 @@ body {
 .container {
     max-width: var(--container);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
 }
 
 .section {
@@ -960,6 +966,36 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+/* Spacing Utilities */
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.py-40 { padding-top: 40px; padding-bottom: 40px; }
+.py-60 { padding-top: 60px; padding-bottom: 60px; }
+.py-80 { padding-top: 80px; padding-bottom: 80px; }
+.py-100 { padding-top: 100px; padding-bottom: 100px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 60px; }
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 60px; }
+
+.pt-20 { padding-top: 20px; }
+.pt-40 { padding-top: 40px; }
+.pt-80 { padding-top: 80px; }
+
+.pb-20 { padding-bottom: 20px; }
+.pb-40 { padding-bottom: 40px; }
+.pb-80 { padding-bottom: 80px; }
+
+.align-center { align-items: center; }
+.text-center { text-align: center; }
 
 .pt-120 {
     padding-top: 160px;
@@ -1037,7 +1073,7 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 1200px;
+    max-width: var(--container);
     min-width: unset;
     z-index: 1000;
     transition: var(--transition);
@@ -1108,13 +1144,13 @@ h2 {
     background: var(--accent-gradient);
     color: var(--secondary) !important;
     font-weight: 800;
-    box-shadow: 0 5px 15px rgba(229, 183, 81, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
     border: none;
 }
 
 .btn-small:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(229, 183, 81, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 242, 255, 0.4);
 }
 
 .btn-large {
@@ -1316,6 +1352,8 @@ h2 {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
 }
 
 .bento-item.large {
@@ -1334,7 +1372,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(229, 183, 81, 0.06), transparent 40%);
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(0, 242, 255, 0.06), transparent 40%);
     z-index: 3;
     pointer-events: none;
     opacity: 0;
@@ -1444,6 +1482,9 @@ h2 {
     position: relative;
     overflow: hidden;
     transition: var(--transition);
+    backdrop-filter: blur(15px);
+    background: var(--bg-card);
+    border-radius: 20px;
 }
 
 .machinery-item:nth-child(3n+1) {
@@ -1499,7 +1540,7 @@ h2 {
 .stat-icon {
     width: 50px;
     height: 50px;
-    background: rgba(229, 183, 81, 0.1);
+    background: rgba(0, 242, 255, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -1683,10 +1724,10 @@ footer {
 }
 
 .social-icons a:hover {
-    background: #e5b751;
-    /* Corporate Gold on hover */
+    background: var(--primary);
+    /* Corporate Blue on hover */
     color: #ffffff !important;
-    border-color: #e5b751;
+    border-color: var(--primary);
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
