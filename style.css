@@ -420,7 +420,8 @@ body.tasarim-6 .hero-image-wrap {
 }
 
 .btn-primary:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 242, 255, 0.3);
 }
 
 .btn-outline {
@@ -431,6 +432,7 @@ body.tasarim-6 .hero-image-wrap {
 .btn-outline:hover {
     background: var(--primary);
     color: var(--secondary);
+    transform: translateY(-2px);
 }
 
 /* Modal 3D Viewer */
@@ -1151,6 +1153,7 @@ h2 {
 .btn-small:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 242, 255, 0.4);
+    filter: brightness(1.1);
 }
 
 .btn-large {
@@ -1728,8 +1731,8 @@ footer {
     /* Corporate Blue on hover */
     color: #ffffff !important;
     border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 242, 255, 0.2);
 }
 
 .footer-bottom {

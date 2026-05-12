@@ -94,18 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Magnetic Elements
-    document.querySelectorAll('.btn, .logo, .nav-links a, .social-icons a').forEach(el => {
-        el.addEventListener('mousemove', (e) => {
-            const rect = el.getBoundingClientRect();
-            const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
-            const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
-            el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-        });
-        el.addEventListener('mouseleave', () => {
-            el.style.transform = `translate3d(0, 0, 0)`;
-        });
-    });
+    // Magnetic Elements removed for better corporate feel
 
     // Scroll Effects
     window.addEventListener('scroll', () => {
