@@ -3,72 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollProgress = document.querySelector('.scroll-progress');
     const parallaxBgs = document.querySelectorAll('.parallax-bg');
     
-    // Preloader - Robust Version
-    const hideLoader = () => {
+    // Preloader
+    window.addEventListener('load', () => {
         const loader = document.getElementById('loader');
-        if (loader) {
-            gsap.to(loader, {
-                opacity: 0,
-                duration: 0.8,
-                onComplete: () => {
-                    loader.style.display = 'none';
-                    initAnimations(); // Start animations after loader is gone
-                }
-            });
-        }
-    };
-
-    // Hide loader when page is fully loaded
-    window.addEventListener('load', hideLoader);
-
-    // Safety timeout: hide loader after 4 seconds anyway
-    setTimeout(hideLoader, 4000);
-
-    // GSAP Animations Initialization
-    function initAnimations() {
-        if (!window.gsap) return;
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Hero Content Animation
-        const heroTl = gsap.timeline();
-        heroTl.from(".hero-tag", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" })
-              .from("#hero h1", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.3")
-              .from("#hero p", { y: 20, opacity: 0, duration: 0.8, ease: "power2.out" }, "-=0.5")
-              .from(".hero-btns .btn", { scale: 0.9, opacity: 0, duration: 0.5, stagger: 0.1, ease: "back.out(1.7)" }, "-=0.4");
-
-        // Section Reveal Animations
-        document.querySelectorAll('section').forEach(section => {
-            const heading = section.querySelector('h2');
-            const cards = section.querySelectorAll('.stat-card, .reference-item, .info-item-new, .bento-item, .machinery-item');
-            
-            if (heading) {
-                gsap.from(heading, {
-                    scrollTrigger: {
-                        trigger: heading,
-                        start: "top 85%",
-                    },
-                    y: 40,
-                    opacity: 0,
-                    duration: 1,
-                    ease: "power3.out"
-                });
+        setTimeout(() => {
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.style.display = 'none', 800);
             }
-
-            if (cards.length > 0) {
-                gsap.from(cards, {
-                    scrollTrigger: {
-                        trigger: cards[0],
-                        start: "top 90%",
-                    },
-                    y: 30,
-                    opacity: 0,
-                    duration: 0.8,
-                    stagger: 0.15,
-                    ease: "power2.out"
-                });
-            }
-        });
-    }
+        }, 1000);
+    });
 
     // Custom Cursor
     const cursor = document.createElement('div');
