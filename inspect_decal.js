@@ -3,7 +3,7 @@ const { Document, NodeIO } = require('@gltf-transform/core');
 
 async function inspectModel() {
     const io = new NodeIO();
-    const doc = await io.read('assets/forklift.glb');
+    const doc = await io.read('C:/Users/Lenovo/Downloads/forklift_belgesem.glb');
     
     console.log("=== NODES ===");
     doc.getRoot().listNodes().forEach((node, i) => {
