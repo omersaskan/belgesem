@@ -9,14 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 
 <body>
     <div class="bg-noise"></div>
     <div class="bg-blob blob-1"></div>
 
-    <header id="main-header" class="scrolled">
+    <header id="main-header">
         <nav class="container">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.png" alt="BELGESEM Logo"></a>
@@ -24,7 +26,8 @@
             <ul class="nav-links">
                 <li><a href="index.html#hero">Ana Sayfa</a></li>
                 <li class="nav-item">
-                    <a href="javascript:void(0)" style="cursor: default;">Belgesem'e Bakış <i data-lucide="chevron-down"></i></a>
+                    <a href="javascript:void(0)" style="cursor: default;">Belgesem'e Bakış <i
+                            data-lucide="chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="biz-kimiz.html">Biz Kimiz</a></li>
                         <li><a href="kadromuz.html">Kadromuz</a></li>
@@ -32,15 +35,17 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:void(0)" style="cursor: default;">Eğitimlerimiz <i data-lucide="chevron-down"></i></a>
+                    <a href="javascript:void(0)" style="cursor: default;">Eğitimlerimiz <i
+                            data-lucide="chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="is-makinesi.html">İş Makinesi Operatörlüğü</a></li>
                         <li><a href="tarim-makinesi.html">Tarım Makinası Operatörlüğü</a></li>
                     </ul>
                 </li>
-                <li><a href="index.html#footer-social">Sosyal Medyada Biz</a></li>
+                <li><a href="basinda-biz.html">Basında Biz</a></li>
                 <li><a href="index.html#references">Referanslarımız</a></li>
-                <li><a href="index.html#contact" class="btn btn-primary btn-small">Online Başvuru</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-primary btn-small basvuru-trigger">Online Başvuru</a>
+                </li>
             </ul>
             <button class="mobile-menu-toggle">
                 <span></span><span></span><span></span>
@@ -55,47 +60,226 @@
                 <div class="section-header text-center mb-60">
                     <span class="section-tag">Eğitim Programlarımız</span>
                     <h2>İş Makinesi <span class="gradient-text">Operatörlüğü</span></h2>
-                    <p class="mt-20">Ağır hizmet tipi makinelerin güvenli ve verimli kullanımı için teorik ve pratik uzmanlık eğitimleri.</p>
+                    <p class="mt-20">Ağır hizmet tipi makinelerin güvenli ve verimli kullanımı için teorik ve pratik
+                        uzmanlık eğitimleri.</p>
                 </div>
-                <div class="grid grid-3 gap-30">
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="truck"></i></div>
-                        <h3>Ekskavatör</h3>
-                        <p>Ağır hizmet tipi kazı ve yükleme eğitimleri.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="layers"></i></div>
-                        <h3>Forklift</h3>
-                        <p>Depo ve lojistik operasyonları için uzmanlık.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="cog"></i></div>
-                        <h3>Loder</h3>
-                        <p>Yükleme ve malzeme taşıma teknikleri.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="wrench"></i></div>
-                        <h3>Beko Loder</h3>
-                        <p>Kazıcı-yükleyici makinelerin operasyonel detayları.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="database"></i></div>
-                        <h3>Silindir</h3>
-                        <p>Yol ve zemin sıkıştırma makineleri eğitimi.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
-                    </div>
-                    <div class="bento-item">
-                        <div class="card-icon"><i data-lucide="maximize"></i></div>
-                        <h3>Vinç</h3>
-                        <p>Mobil ve kule vinç operasyon yetkinliği.</p>
-                        <a href="index.html#contact" class="read-more">Bilgi Al</a>
+                <div class="course-program-card">
+
+
+                    <div class="program-list">
+                        <div class="program-item" data-course="BEKO LODER">
+                            <div class="item-main"><span>1</span>
+                                <p>BEKO LODER</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="EKSKAVATÖR">
+                            <div class="item-main"><span>2</span>
+                                <p>EKSKAVATÖR</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="LODER">
+                            <div class="item-main"><span>3</span>
+                                <p>LODER</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="DOZER (PALETLİ)">
+                            <div class="item-main"><span>4</span>
+                                <p>DOZER (PALETLİ)</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="GREYDER">
+                            <div class="item-main"><span>5</span>
+                                <p>GREYDER</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="SİLİNDİR">
+                            <div class="item-main"><span>6</span>
+                                <p>SİLİNDİR</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="MOBİL VİNÇ">
+                            <div class="item-main"><span>7</span>
+                                <p>MOBİL VİNÇ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="FORKLİFT">
+                            <div class="item-main"><span>8</span>
+                                <p>FORKLİFT</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="İSTİF MAKİNESİ">
+                            <div class="item-main"><span>9</span>
+                                <p>İSTİF MAKİNESİ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="ELEKTRİKLİ TRANSPALET">
+                            <div class="item-main"><span>10</span>
+                                <p>ELEKTRİKLİ TRANSPALET</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="KÖPRÜLÜ VİNÇ">
+                            <div class="item-main"><span>11</span>
+                                <p>KÖPRÜLÜ VİNÇ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="PERSONEL VE YÜK YÜKSELTİCİ (MANLİFT)">
+                            <div class="item-main"><span>12</span>
+                                <p>PERSONEL VE YÜK YÜKSELTİCİ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="ÇEKME ARACI İŞ MAKİNESİ">
+                            <div class="item-main"><span>13</span>
+                                <p>ÇEKME ARAÇLARI</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="SONDAJ">
+                            <div class="item-main"><span>14</span>
+                                <p>SONDAJ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="ZEMİN, YOL SÜPÜRME VE TEMİZLEME MAKİNESİ">
+                            <div class="item-main"><span>15</span>
+                                <p>ZEMİN, YOL SÜPÜRME VE TEMİZLEME MAKİNESİ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="BUGGY (GOLF ARABASI)">
+                            <div class="item-main"><span>16</span>
+                                <p>BUGGY (GOLF ARABASI)</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="YÜK ASANSÖRÜ">
+                            <div class="item-main"><span>17</span>
+                                <p>YÜK ASANSÖRÜ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="İTFAİYE ARACI">
+                            <div class="item-main"><span>18</span>
+                                <p>İTFAİYE ARACI</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="ÇÖP KAMYONU">
+                            <div class="item-main"><span>19</span>
+                                <p>ÇÖP KAMYONU</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="VİDANJÖR">
+                            <div class="item-main"><span>20</span>
+                                <p>VİDANJÖR</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="BETON MİKSERİ">
+                            <div class="item-main"><span>21</span>
+                                <p>BETON MİKSERİ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="SERDÜMEN / SAPANCI / İŞARETÇİ">
+                            <div class="item-main"><span>22</span>
+                                <p>SERDÜMEN / SAPANCI / İŞARETÇİ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
+                        <div class="program-item" data-course="KULE VİNÇ">
+                            <div class="item-main"><span>23</span>
+                                <p>KULE VİNÇ</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-action detail-btn">Detay</button>
+                                <button class="btn-action apply-btn">Başvur</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
+        </section>
+        </div>
         </section>
     </main>
 
@@ -103,9 +287,10 @@
         <div class="container footer-grid">
             <div class="footer-item footer-about">
                 <div class="footer-logo mb-20">
-                    <img src="assets/logo.png" alt="BELGESEM Logo" style="height: 40px; filter: brightness(0) saturate(100%) invert(0%);">
+                    <img src="assets/logo.png" alt="BELGESEM Logo" style="height: 40px;">
                 </div>
-                <p>Aydın'ın lider mesleki eğitim merkezi olarak 2011'den beri geleceğin operatörlerini yetiştiriyoruz.</p>
+                <p>Aydın'ın lider iş makinesi operatörlük kursu olarak 2022'den beri geleceğin operatörlerini
+                    yetiştiriyoruz.</p>
             </div>
             <div class="footer-item footer-links">
                 <h4>Hızlı Menü</h4>
@@ -133,6 +318,11 @@
                     <li><a href="galeri.html">Fotoğraf Galerisi</a></li>
                 </ul>
             </div>
+            <div class="footer-item footer-links">
+                <h4>Çalışma Saatleri</h4>
+                <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 10px;">Pazar Hariç Tüm Günler.</p>
+                <p style="color: #64748b; font-size: 0.95rem;">Çalışma Saatleri: <br>08:30 - 12:30 / 13:30 - 18:00</p>
+            </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-content">
@@ -149,7 +339,97 @@
         </div>
     </footer>
 
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-container" id="belgesem-chatbot">
+            <div class="chatbot-header">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="header-info">
+                    <span style="font-weight: 700; display: block;">BELGESEM Asistan</span>
+                    <span style="font-size: 0.7rem; opacity: 0.8;">Çevrimiçi | Hızlı Başvuru</span>
+                </div>
+                <button class="close-chat" id="close-chatbot"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chatbot-input-area" id="chat-input-wrapper">
+                <input type="text" id="chat-input" placeholder="Mesajınızı yazın...">
+                <button class="chat-send-btn" id="send-chat">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="instagram-float" onclick="window.open('https://www.instagram.com/belgesemegitimmerkezi/', '_blank')"
+        aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </button>
+
+    <button class="whatsapp-float" id="wp-trigger" aria-label="WhatsApp Destek Hattı">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+        </svg>
+    </button>
+
+    <div id="machinery-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-split">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+
+            <!-- LEFT: Image Panel -->
+            <div class="modal-image-panel">
+                <div class="modal-header-hero">
+                    <img id="modal-hero-img" src="" alt="Machine Hero">
+                </div>
+                <div class="modal-image-badge">
+                    <span class="category-tag" id="modal-category">İş Makinesi</span>
+                </div>
+            </div>
+
+            <!-- RIGHT: Content Panel -->
+            <div class="modal-content-panel">
+                <h2 id="modal-title" class="modal-title-heading">Makine Adı</h2>
+
+                <div class="modal-meta-row">
+                    <div class="meta-chip"><i data-lucide="clock"></i><span id="modal-duration">60 Saat Eğitim</span></div>
+                    <div class="meta-chip"><i data-lucide="award"></i><span id="modal-certificate">MEB Onaylı Sertifika</span></div>
+                    <div class="meta-chip"><i data-lucide="users"></i><span id="modal-target">18+ Yaş Grubu</span></div>
+                </div>
+
+                <div class="content-section">
+                    <h3><i data-lucide="target"></i> Programın Amaçları</h3>
+                    <p class="desc-text" id="modal-objectives-intro" style="margin-bottom: 15px; font-weight: 500; color: #94a3b8;"></p>
+                    <ul class="objectives-list" id="modal-objectives-list">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h3><i data-lucide="briefcase"></i> Çalışma Alanları</h3>
+                    <p class="desc-text" id="modal-work-areas"></p>
+                </div>
+
+                <div class="content-section">
+                    <h3><i data-lucide="file-text"></i> Programın Dayanağı</h3>
+                    <ul class="basis-list" id="modal-basis">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <button class="nav-btn prev-btn"><i data-lucide="chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script>lucide.createIcons();</script>
 </body>
+
 </html>

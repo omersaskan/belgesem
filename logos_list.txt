@@ -1,0 +1,150 @@
+﻿                            <div class='reference-item'><img src='assets/referanslarımız/logoss/1111.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ABALIOĞLUU.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ADRİMAK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ADÜ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/AKKİM.webp' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ALKAN PALET.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Alpler.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/amberkoku.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ANDA BARUT.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ANDROS.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/AYDN PULLK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/AYZİN.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BALKANN.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BANVİT.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/baTI KİPAŞ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BAŞÖZ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BEGEÇ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BETEK BOYA.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/bilalsabuncu.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BOZDOĞAN BEL.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BULUT.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BİZİM TOPTAN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/BİÇER.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/CEVA L.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/D MARİN.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DALAMAN HAVALİMANI.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DCM-1-AYDIN OSB.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DCM-1.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DENİZ FOOD.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DHMİ_logo.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DSİ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DVS.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/DİDİM T.O.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ECC.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELE Z.O.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELER ÇİFTLİĞİ.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELER ÇİFTLİĞİ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE OLUŞUM.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE ROYAL.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE ULAŞIM.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EKER.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EROĞLU.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ESAN.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EYS.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/EYSİM.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/FİBER.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GEOLİTE.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GIDA TAY.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Gidatay.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GRAMAS.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GRANİTAŞ.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜMÜŞKÖY.webp' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜRİŞ.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜVEN TARIM.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/HAUS.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/hcc-maden-makina (1).gif' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/HEDEF K.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (1).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (1).png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (2).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (2).png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (3).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (4).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (5).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (6).jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/indir.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/JANTSA.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/JMW.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/kaltun.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KARMAK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KARPUZLU.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KIRLIOĞLU.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KONTEK LOGO.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KOÇARLI Z.O.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KOÇARLI.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/kurumsal_logo.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KUŞADASI T.O.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/KÇS.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/LİFTUP.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MAKOFİX.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MAROLİ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MAVİ BAYRAK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MENDERES JEOTERMAİL.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MONDİAL.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/MİKROMAN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/NAR.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/NAZİLLİ T.O.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/NETLOG.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/NGT.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/OCEANMEC.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/OKT.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/OLİVE PRİNA.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Orge.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ORTAKLAR OSB.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/PAGYSA.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/PG HOLDİNG.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/pgkimya.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/PGR.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Polat.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/POLT.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/PROGEN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/PİRİM.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/QUA.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/RETEK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ROYAL.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SANX.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/seva.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SULTAN SERA.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/sur çlk.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE T.O.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE UN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE Z.O.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKTAŞ.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SİBAŞ.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/SİBELCO.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TARİŞ SÖKE.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TARİŞ.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TEKMEN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TESPO.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Titan-Asia.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Toprak-Tekstil.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TSA.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/TUĞBA.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/UÇAK TEKSTİL.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/UĞUR.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/woodart.jpg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Yagmur-Tekstil.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/Yespan.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/YILMAZ YAPI MARKET.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/YÜKSEL SERAMİK.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ZER ZEYTİN.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ziraat odası.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ZORLU.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇALLI YAPI.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇAĞDAŞ CAM.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇEVİK GIDA.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇİMSTNE.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇİNE.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ÖZEK VİNÇ.PNG' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/İLGİ TARIM.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/İMFALT.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/İNSUS.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/İYA ORGANİK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/İZELMAK.png' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞAHİNLER.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞIRLAN SU.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞOK.jpeg' alt='Referans'></div>
+                            <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞİŞE CM.png' alt='Referans'></div>
+
