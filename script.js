@@ -458,8 +458,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "BEKO LODER": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07062.jpg",
-            imageMobile: "assets/mobile/DSC07061.jpg",
+            imageWeb: "assets/yeni_gorseller/9.jpeg",
+            imageMobile: "assets/yeni_gorseller/9.jpeg",
             intro: "Beko Loder, ya da diğer bilinen adıyla kazıcı-yükleyici, traktör gövdesinin önünde kova ve arkasında kazıcı ile birleştirilmesi ile ortaya çıkmış olan bir iş makinesidir.",
             objectives: [
                 "Kazıcı ve yükleyici kısımların hidrolik sistem kontrollerini kavrama",
@@ -472,8 +472,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "EKSKAVATÖR": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07080.jpg",
-            imageMobile: "assets/mobile/DSC07080.jpg",
+            imageWeb: "assets/yeni_gorseller/4.jpeg",
+            imageMobile: "assets/yeni_gorseller/4.jpeg",
             intro: "Alt kısmı paletli, lastik tekerlekli veya kamyon şasili olan bu esnek iş makinesi, kendi bulunduğu düzeyin altında veya üzerinde kazı yapabilme kabiliyetine sahiptir.",
             objectives: [
                 "Tahrik motoru ve kumanda tertibatının teknik işleyişini anlama",
@@ -486,8 +486,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "LODER": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07064.jpg",
-            imageMobile: "assets/mobile/DSC07063.jpg",
+            imageWeb: "assets/yeni_gorseller/8.jpeg",
+            imageMobile: "assets/yeni_gorseller/8.jpeg",
             intro: "Loder (Yükleyici), önde yüklemeyi sağlayan kepçe kısmından oluşan ve ağır malzemelerin taşınması, yüklenmesi ya da boşaltılması işlemlerinde kullanılan güçlü bir makinedir.",
             objectives: [
                 "Kepçe ve hidrolik sistemlerin etkin ve güvenli kullanımı",
@@ -514,8 +514,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "GREYDER": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07056.jpg",
-            imageMobile: "assets/mobile/DSC07055.jpg",
+            imageWeb: "assets/yeni_gorseller/10.jpeg",
+            imageMobile: "assets/yeni_gorseller/10.jpeg",
             intro: "Greyderler; tesviye işleri, yol yapımı, hendek kazma, karıştırma, yayma ve karla mücadele gibi çok amaçlı görevlerde kullanılan hassas makinelerdir.",
             objectives: [
                 "Tesviye, bombelik verme ve yüzey düzleme teknikleri",
@@ -528,8 +528,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "DOZER (PALETLİ)": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07059.jpg",
-            imageMobile: "assets/mobile/DSC07060.jpg",
+            imageWeb: "assets/yeni_gorseller/15.jpeg",
+            imageMobile: "assets/yeni_gorseller/15.jpeg",
             intro: "İnşaat sahalarında toprak ve moloz taşımak için kullanılan, büyük bir bıçak ve güçlü paletlerle donatılmış, yüksek itme gücüne sahip iş makinesidir.",
             objectives: [
                 "Bıçak kontrolü ile toprak kazma ve taşıma teknikleri",
@@ -542,8 +542,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "SİLİNDİR": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07073.jpg",
-            imageMobile: "assets/mobile/DSC07071.jpg",
+            imageWeb: "assets/yeni_gorseller/2.jpeg",
+            imageMobile: "assets/yeni_gorseller/2.jpeg",
             intro: "Asfalt silindiri; yola dökülen asfalt, çakıl gibi malzemelerin eşit ve düz bir şekilde yayılmasını sağlayan, zemini sıkıştırarak presleyen kritik bir araçtır.",
             objectives: [
                 "Zemin sıkıştırma ve presleme tekniklerini uygulama",
@@ -570,8 +570,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "İSTİF MAKİNESİ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07095.jpg",
-            imageMobile: "assets/mobile/DSC07091.jpg",
+            imageWeb: "assets/yeni_gorseller/16.jpeg",
+            imageMobile: "assets/yeni_gorseller/16.jpeg",
             intro: "Genellikle elektrikli modelleri bulunan, dar alanlarda yükleri belirli bir yüksekliğe (6 metreye kadar) kaldırarak depolama düzeni sağlayan araçlardır.",
             objectives: [
                 "Yüklerin yüksek raflara güvenli yerleştirilmesi ve düzenlenmesi",
@@ -584,8 +584,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ELEKTRİKLİ TRANSPALET": {
             category: "İş Makinesi",
             duration: "18 Saat Eğitim",
-            imageWeb: "assets/web/DSC07095.jpg",
-            imageMobile: "assets/mobile/DSC07095.jpg",
+            imageWeb: "assets/yeni_gorseller/3.jpeg",
+            imageMobile: "assets/yeni_gorseller/3.jpeg",
             intro: "Paletli yüklerin kısa mesafelerde taşınması ve depolama alanları arasında kolayca yönlendirilmesi için tasarlanmış, zemin seviyesinde çalışan pratik araçlardır.",
             objectives: [
                 "Elektrikli transpalet ile güvenli yük transferi",
@@ -598,8 +598,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "KÖPRÜLÜ VİNÇ": {
             category: "İş Makinesi",
             duration: "48 Saat Eğitim",
-            imageWeb: "assets/web/DSC07046.jpg",
-            imageMobile: "assets/mobile/DSC07045.jpg",
+            imageWeb: "assets/yeni_gorseller/5.jpeg",
+            imageMobile: "assets/yeni_gorseller/5.jpeg",
             intro: "İki paralel ray üzerinde hareket eden köprü yapısıyla geniş alanlarda ağır yük taşıma kabiliyeti sunan güçlü ve dayanıklı sistemlerdir.",
             objectives: [
                 "Ray üstü hareketli sistemlerin kontrol mekanizmaları",
@@ -612,8 +612,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "PERSONEL VE YÜK YÜKSELTİCİ (MANLİFT)": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07044.jpg",
-            imageMobile: "assets/mobile/DSC07043.jpg",
+            imageWeb: "assets/yeni_gorseller/14.jpeg",
+            imageMobile: "assets/yeni_gorseller/14.jpeg",
             intro: "İşçilerin ve ekipmanların güvenli bir şekilde yüksekte çalışmasını sağlayan, verimli ve emniyetli bir çalışma ortamı sunan platformlardır.",
             objectives: [
                 "Yükseklikte çalışma güvenliği ve platform kontrolü",
@@ -626,8 +626,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ÇEKME ARACI İŞ MAKİNESİ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07048.jpg",
-            imageMobile: "assets/mobile/DSC07047.jpg",
+            imageWeb: "assets/yeni_gorseller/13.jpeg",
+            imageMobile: "assets/yeni_gorseller/13.jpeg",
             intro: "Trafiğe kapalı alanlarda bagaj, kargo ve yüklerin güvenli taşınması için kullanılan, genellikle elektrikle çalışan çekme araçlarıdır.",
             objectives: [
                 "Römork bağlantısı ve güvenli yük sevkiyatı",
@@ -640,8 +640,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ZEMİN, YOL SÜPÜRME VE TEMİZLEME MAKİNESİ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
-            imageMobile: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
+            imageWeb: "assets/yeni_gorseller/21.jpeg",
+            imageMobile: "assets/yeni_gorseller/21.jpeg",
             intro: "Sert zeminlerin fırça, ped ve vakum sistemleri ile hızlı ve etkili bir şekilde temizlenmesini sağlayan profesyonel temizlik makineleridir.",
             objectives: [
                 "Fırça ve vakum sistemlerinin etkin ayarlanması",
@@ -654,8 +654,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "BUGGY (GOLF ARABASI)": {
             category: "İş Makinesi",
             duration: "44 Saat Eğitim",
-            imageWeb: "assets/web/DSC07100.jpg",
-            imageMobile: "assets/mobile/DSC07099.jpg",
+            imageWeb: "assets/yeni_gorseller/11.jpeg",
+            imageMobile: "assets/yeni_gorseller/11.jpeg",
             intro: "Elektrikli veya içten yanmalı motorlu, yol dışı alanlarda personel ve bagaj/yük taşıma amacıyla kullanılan pratik araçlardır.",
             objectives: [
                 "Güvenli yolcu ve hafif yük taşıma teknikleri",
@@ -668,8 +668,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "PAMUK TOPLAMA MAKİNESİ": {
             category: "Tarım Makinesi",
             duration: "78 Saat Eğitim",
-            imageWeb: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
-            imageMobile: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
+            imageWeb: "assets/yeni_gorseller/22.jpeg",
+            imageMobile: "assets/yeni_gorseller/22.jpeg",
             intro: "Pamuk bitkisinin tarladan otomasyonla toplanmasını sağlayan, traktörle çekilen veya kendi yürür çeşitleri bulunan ileri teknoloji bir tarım makinesidir.",
             objectives: [
                 "Pamuk hasat sistemlerinin teknik kontrolü ve ayarları",
@@ -696,8 +696,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "BİÇERDÖVER": {
             category: "Tarım Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07054.jpg",
-            imageMobile: "assets/mobile/DSC07052.jpg",
+            imageWeb: "assets/yeni_gorseller/20.jpeg",
+            imageMobile: "assets/yeni_gorseller/20.jpeg",
             intro: "Hasat, harman ve savurma işlemlerini tek geçişte yaparak buğday, arpa, mısır gibi ürünleri ayrıştıran yüksek kapasiteli motorlu tarım makinesidir.",
             objectives: [
                 "Ürüne göre dövme ve eleme sistemi ayarlamaları",
@@ -710,8 +710,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ÇIRÇIR MAKİNESİ": {
             category: "Tarım Makinesi",
             duration: "78 Saat Eğitim",
-            imageWeb: "assets/web/DSC07038.jpg",
-            imageMobile: "assets/mobile/DSC07037.jpg",
+            imageWeb: "assets/yeni_gorseller/12.jpeg",
+            imageMobile: "assets/yeni_gorseller/12.jpeg",
             intro: "Tarladan toplanan kütlü pamuğu çiğitlerinden ve yabancı maddelerden ayırarak elyafı temizleyen kritik bir endüstriyel cihazdır.",
             objectives: [
                 "Liflerin tohumdan ayrılması sürecindeki teknik kontrol",
@@ -724,8 +724,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "SONDAJ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/mobile/DSC07041.jpg", /* Uses mobile path because file only exists there */
-            imageMobile: "assets/mobile/DSC07041.jpg",
+            imageWeb: "assets/yeni_gorseller/25.jpeg", /* Uses mobile path because file only exists there */
+            imageMobile: "assets/yeni_gorseller/25.jpeg",
             intro: "Sondaj makinesi, yer altında su, maden veya zemin etüdü için delik açmada kullanılan güçlü bir iş makinesidir.",
             objectives: [
                 "Sondaj kulesi ve matkap sistemlerinin kurulumu",
@@ -738,8 +738,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "İTFAİYE ARACI": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07070.jpg",
-            imageMobile: "assets/mobile/DSC07069.jpg",
+            imageWeb: "assets/yeni_gorseller/7.jpeg",
+            imageMobile: "assets/yeni_gorseller/7.jpeg",
             intro: "İtfaiye araçları, yangınla mücadele ve kurtarma operasyonları için özel donanımlara sahip acil müdahale araçlarıdır.",
             objectives: [
                 "Pompa ve su ikmal sistemlerinin kullanımı",
@@ -752,8 +752,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ÇÖP KAMYONU": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07067.jpg",
-            imageMobile: "assets/mobile/DSC07066.jpg",
+            imageWeb: "assets/yeni_gorseller/1.jpeg",
+            imageMobile: "assets/yeni_gorseller/1.jpeg",
             intro: "Çöp kamyonları, katı atıkların toplanması ve sıkıştırılarak taşınması için tasarlanmış özel donanımlı araçlardır.",
             objectives: [
                 "Hidrolik sıkıştırma sistemlerinin kullanımı",
@@ -766,8 +766,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "BETON MİKSERİ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07075.jpg",
-            imageMobile: "assets/mobile/DSC07074.jpg",
+            imageWeb: "assets/yeni_gorseller/6.jpeg",
+            imageMobile: "assets/yeni_gorseller/6.jpeg",
             intro: "Beton mikseri (transmikser), hazır betonun özelliklerini kaybetmeden şantiyeye taşınmasını ve dökülmesini sağlayan araçtır.",
             objectives: [
                 "Tambur dönüş hızı ve karışım kontrolü",
@@ -780,8 +780,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "VİDANJÖR": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000",
-            imageMobile: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000",
+            imageWeb: "assets/yeni_gorseller/19.jpeg",
+            imageMobile: "assets/yeni_gorseller/19.jpeg",
             intro: "Vidanjör, sıvı atıkların vakumlanarak toplanması ve nakledilmesi için kullanılan donanımlı bir iş makinesidir.",
             objectives: [
                 "Vakum pompası ve emiş sistemlerinin kullanımı",
@@ -794,8 +794,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "KULE VİNÇ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000",
-            imageMobile: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000",
+            imageWeb: "assets/yeni_gorseller/23.jpeg",
+            imageMobile: "assets/yeni_gorseller/23.jpeg",
             intro: "Kule vinç, özellikle yüksek katlı yapıların inşaatında ağır yüklerin dikey ve yatay taşınmasını sağlayan sabit kaldırma sistemidir.",
             objectives: [
                 "Vinç kurulumu ve denge mekanizmalarını kavrama",
@@ -813,8 +813,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "YÜK ASANSÖRÜ": {
                 category: "İş Makinesi",
                 duration: "60 Saat Eğitim",
-                imageWeb: "assets/web/DSC07044.jpg",
-                imageMobile: "assets/mobile/DSC07043.jpg",
+                imageWeb: "assets/yeni_gorseller/18.jpeg",
+                imageMobile: "assets/yeni_gorseller/18.jpeg",
                 intro: "Yük asansörleri, fabrika ve depolarda ağır yüklerin katlar arasında güvenle taşınmasını sağlayan endüstriyel kaldırma sistemleridir.",
                 objectives: [
                     "Asansör kapasitesi ve güvenli yük limitleri",
@@ -894,65 +894,37 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalSplit = document.querySelector('.modal-split');
         const isDesktop = window.innerWidth > 900;
 
-        if (name === "FORKLİFT" || name === "İSTİF MAKİNESİ" || name === "ELEKTRİKLİ TRANSPALET" || name === "SONDAJ") {
-            heroImg.style.objectFit = "contain";
-            heroImg.style.objectPosition = "left center"; // align to left
-            heroImg.style.paddingBottom = "0";
-            
-            // Let the image dictate its width naturally!
-            heroImg.style.width = "auto";
-            heroImg.style.height = "100%";
-
-            if (isDesktop && imagePanel) {
-                imagePanel.style.width = "auto";
-                imagePanel.style.height = "100%";
-                imagePanel.style.aspectRatio = "auto";
-                imagePanel.style.background = "#0f172a"; // Match modal bg to eliminate boundaries
-                if (headerHero) headerHero.style.width = "auto";
-            }
-            if (isDesktop && contentPanel) {
-                contentPanel.style.position = "static";
-                contentPanel.style.width = "auto";
-                contentPanel.style.flex = "1";
-            }
-            if (isDesktop && modalSplit) {
-                modalSplit.style.height = "85vh"; // Provide fixed height for image to scale against
-            }
-        } else {
-            heroImg.style.objectFit = "cover";
-            heroImg.style.width = "100%";
-            heroImg.style.height = "100%";
-            
-            if (imagePanel) {
-                imagePanel.style.width = "";
-                imagePanel.style.height = "";
-                imagePanel.style.aspectRatio = "";
-                imagePanel.style.background = "";
-                if (headerHero) headerHero.style.width = "";
-            }
-            if (contentPanel) {
-                contentPanel.style.position = "";
-                contentPanel.style.width = "";
-                contentPanel.style.flex = "";
-            }
-            if (modalSplit) {
-                modalSplit.style.height = "";
-            }
-            
-            if (name === "EKSKAVATÖR") {
-                heroImg.style.objectPosition = "center"; // Center is better to not crop the cabin
-                heroImg.style.paddingBottom = "15px"; // Reduced padding!
-                heroImg.style.background = "#050d1a";
-            } else {
-                heroImg.style.objectPosition = "center";
-                heroImg.style.paddingBottom = "0";
-                heroImg.style.background = "transparent";
-            }
+        heroImg.style.objectFit = "contain";
+        heroImg.style.objectPosition = "center";
+        heroImg.style.paddingBottom = "0";
+        heroImg.style.background = "#fff";
+        heroImg.style.width = "100%";
+        heroImg.style.height = "100%";
+        
+        if (imagePanel) {
+            imagePanel.style.width = "";
+            imagePanel.style.height = "";
+            imagePanel.style.aspectRatio = "";
+            imagePanel.style.background = "#fff";
+            if (headerHero) headerHero.style.width = "";
+        }
+        if (contentPanel) {
+            contentPanel.style.position = "";
+            contentPanel.style.width = "";
+            contentPanel.style.flex = "";
+        }
+        if (modalSplit) {
+            modalSplit.style.height = "";
         }
 
-        document.getElementById('modal-category').textContent = item.category;
-        document.getElementById('modal-title').textContent = item.title;
-        document.getElementById('modal-duration').textContent = item.duration;
+        const catEl = document.getElementById('modal-category');
+        if (catEl) catEl.textContent = item.category;
+        
+        const titleEl = document.getElementById('modal-title');
+        if (titleEl) titleEl.textContent = item.title;
+        
+        const durationEl = document.getElementById('modal-duration');
+        if (durationEl) durationEl.textContent = item.duration;
         
         const basisList = document.getElementById('modal-basis');
         if (basisList) basisList.innerHTML = commonLegalBasis.map(text => `<li><i data-lucide="check-circle"></i> ${text}</li>`).join('');
@@ -1155,3 +1127,5 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(counter);
     });
 });
+
+

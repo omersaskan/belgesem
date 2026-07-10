@@ -210,63 +210,46 @@
 
     <div id="machinery-modal" class="modal">
         <div class="modal-backdrop"></div>
-        <div class="modal-content">
+        <div class="modal-content modal-split">
             <button class="modal-close"><i data-lucide="x"></i></button>
 
-            <div class="modal-header-hero">
-                <img id="modal-hero-img" src="" alt="Machine Hero">
-                <div class="modal-header-content">
+            <!-- LEFT: Image Panel -->
+            <div class="modal-image-panel">
+                <div class="modal-header-hero">
+                    <img id="modal-hero-img" src="" alt="Machine Hero">
+                </div>
+                <div class="modal-image-badge">
                     <span class="category-tag" id="modal-category">Tarım Makinesi</span>
-                    <h2 id="modal-title">Makine Adı</h2>
                 </div>
             </div>
 
-            <div class="modal-body">
-                <div class="modal-sidebar">
-                    <div class="sidebar-card">
-                        <h4>Program Özeti</h4>
-                        <div class="info-item">
-                            <i data-lucide="clock"></i>
-                            <span id="modal-duration">80 Saat Eğitim</span>
-                        </div>
-                        <div class="info-item">
-                            <i data-lucide="award"></i>
-                            <span id="modal-certificate">MEB Onaylı Sertifika</span>
-                        </div>
-                        <div class="info-item">
-                            <i data-lucide="users"></i>
-                            <span id="modal-target">18+ Yaş Grubu</span>
-                        </div>
-                    </div>
-                    <div class="sidebar-card">
-                        <h4>Hızlı Bilgi</h4>
-                        <p style="font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0;">
-                            Bu eğitim programı Milli Eğitim Bakanlığı standartlarına uygun olarak hazırlanmıştır.
-                        </p>
-                    </div>
+            <!-- RIGHT: Content Panel -->
+            <div class="modal-content-panel">
+                <h2 id="modal-title" class="modal-title-heading">Makine Adı</h2>
+
+                <div class="modal-meta-row">
+                    <div class="meta-chip"><i data-lucide="award"></i><span id="modal-certificate">MEB Onaylı Sertifika</span></div>
+                    <div class="meta-chip"><i data-lucide="users"></i><span id="modal-target">18+ Yaş Grubu</span></div>
                 </div>
 
-                <div class="modal-main-content">
-                    <div class="content-section">
-                        <h3><i data-lucide="file-text"></i> Programın Dayanağı</h3>
-                        <ul class="basis-list" id="modal-basis">
-                            <!-- Populated by JS -->
-                        </ul>
-                    </div>
+                <div class="content-section">
+                    <h3><i data-lucide="target"></i> Programın Amaçları</h3>
+                    <p class="desc-text" id="modal-objectives-intro" style="margin-bottom: 15px; font-weight: 500; color: #94a3b8;"></p>
+                    <ul class="objectives-list" id="modal-objectives-list">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
 
-                    <div class="content-section">
-                        <h3><i data-lucide="target"></i> Programın Amaçları</h3>
-                        <p class="desc-text" id="modal-objectives-intro" style="margin-bottom: 15px; font-weight: 600;">
-                        </p>
-                        <ul class="objectives-list" id="modal-objectives-list">
-                            <!-- Populated by JS -->
-                        </ul>
-                    </div>
+                <div class="content-section">
+                    <h3><i data-lucide="briefcase"></i> Çalışma Alanları</h3>
+                    <p class="desc-text" id="modal-work-areas"></p>
+                </div>
 
-                    <div class="content-section">
-                        <h3><i data-lucide="briefcase"></i> Çalışma Alanları</h3>
-                        <p class="desc-text" id="modal-work-areas"></p>
-                    </div>
+                <div class="content-section">
+                    <h3><i data-lucide="file-text"></i> Programın Dayanağı</h3>
+                    <ul class="basis-list" id="modal-basis">
+                        <!-- Populated by JS -->
+                    </ul>
                 </div>
             </div>
 
