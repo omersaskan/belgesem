@@ -500,8 +500,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "FORKLİFT": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07098_1.jpg",
-            imageMobile: "assets/mobile/DSC07098.jpg",
+            imageWeb: "assets/yeni_gorseller/35.jpg",
+            imageMobile: "assets/yeni_gorseller/35.jpg",
             intro: "Forklift, ağır yükleri çatalları aracılığıyla kaldırmak ve özellikle paletlerin üzerindeki ağırlıkları taşımak, kaldırmak ve istif etmek için kullanılan vazgeçilmez bir araçtır.",
             objectives: [
                 "Yüklerin dengeli kaldırılması ve raflara güvenli istiflenmesi",
@@ -556,8 +556,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "MOBİL VİNÇ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/web/DSC07050.jpg",
-            imageMobile: "assets/mobile/DSC07049.jpg",
+            imageWeb: "assets/yeni_gorseller/13.jpeg",
+            imageMobile: "assets/yeni_gorseller/13.jpeg",
             intro: "Tekerlekli şasi üzerine monte edilmiş, çeşitli yükleri kaldırıp taşıyabilen hidrolik veya elektrikli sistemlerle donatılmış çok yönlü bir kaldırma aracıdır.",
             objectives: [
                 "Ağır makine, konteyner ve yapı elemanlarının güvenli kaldırılması",
@@ -584,8 +584,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ELEKTRİKLİ TRANSPALET": {
             category: "İş Makinesi",
             duration: "18 Saat Eğitim",
-            imageWeb: "assets/yeni_gorseller/3.jpeg",
-            imageMobile: "assets/yeni_gorseller/3.jpeg",
+            imageWeb: "assets/web/DSC07050.jpg",
+            imageMobile: "assets/mobile/DSC07049.jpg",
             intro: "Paletli yüklerin kısa mesafelerde taşınması ve depolama alanları arasında kolayca yönlendirilmesi için tasarlanmış, zemin seviyesinde çalışan pratik araçlardır.",
             objectives: [
                 "Elektrikli transpalet ile güvenli yük transferi",
@@ -626,8 +626,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ÇEKME ARACI İŞ MAKİNESİ": {
             category: "İş Makinesi",
             duration: "60 Saat Eğitim",
-            imageWeb: "assets/yeni_gorseller/13.jpeg",
-            imageMobile: "assets/yeni_gorseller/13.jpeg",
+            imageWeb: "assets/yeni_gorseller/3.jpeg",
+            imageMobile: "assets/yeni_gorseller/3.jpeg",
             intro: "Trafiğe kapalı alanlarda bagaj, kargo ve yüklerin güvenli taşınması için kullanılan, genellikle elektrikle çalışan çekme araçlarıdır.",
             objectives: [
                 "Römork bağlantısı ve güvenli yük sevkiyatı",
@@ -682,8 +682,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "SİLAJ MAKİNESİ": {
             category: "Tarım Makinesi",
             duration: "78 Saat Eğitim",
-            imageWeb: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
-            imageMobile: "https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000",
+            imageWeb: "assets/yeni_gorseller/37.jpeg",
+            imageMobile: "assets/yeni_gorseller/37.jpeg",
             intro: "Yeşil yem bitkilerini biçip parçalayarak havasız ortamda saklanabilir (silaj) hale getiren, besin değerini koruyan profesyonel tarım makinesidir.",
             objectives: [
                 "Biçme ve parçalama mekanizmalarının hassas ayarı",
