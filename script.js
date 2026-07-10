@@ -584,8 +584,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "ELEKTRİKLİ TRANSPALET": {
             category: "İş Makinesi",
             duration: "18 Saat Eğitim",
-            imageWeb: "assets/web/DSC07050.jpg",
-            imageMobile: "assets/mobile/DSC07049.jpg",
+            imageWeb: "assets/yeni_gorseller/38.jpeg",
+            imageMobile: "assets/yeni_gorseller/38.jpeg",
             intro: "Paletli yüklerin kısa mesafelerde taşınması ve depolama alanları arasında kolayca yönlendirilmesi için tasarlanmış, zemin seviyesinde çalışan pratik araçlardır.",
             objectives: [
                 "Elektrikli transpalet ile güvenli yük transferi",
@@ -827,8 +827,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "SERDÜMEN / SAPANCI / İŞARETÇİ": {
                 category: "İş Makinesi",
                 duration: "30 Saat Eğitim",
-                imageWeb: "assets/web/DSC07046.jpg",
-                imageMobile: "assets/mobile/DSC07045.jpg",
+                imageWeb: "assets/yeni_gorseller/39.jpeg",
+                imageMobile: "assets/yeni_gorseller/39.jpeg",
                 intro: "Vinç operasyonlarında yükün güvenli bağlanması, yönlendirilmesi ve koordinasyonunu sağlayan kritik yardımcı görev personelidir.",
                 objectives: [
                     "Sapan türleri ve güvenli bağlama teknikleri",
