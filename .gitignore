@@ -1,5 +1,8 @@
 .vercel
 
+# Bagimliliklar: `npm install` ile yeniden kurulur (package-lock.json takip ediliyor)
+node_modules/
+
 # Yeniden uretilebilen buyuk ara dosyalar (scratch/build_temp_glb.js + Blender uretir)
 scratch/forklift_temp.glb
 scratch/check.usda

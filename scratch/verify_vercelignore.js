@@ -20,18 +20,25 @@ function ignored(rel) {
 // site kaynaklarindan yerel dosya referanslarini topla
 const pageFiles = fs.readdirSync(ROOT).filter(f => /\.(html|css|js)$/i.test(f));
 const refs = new Map();   // rel yol -> kaynak dosya
-const RE = /(?:src|href|data-src|poster|content)\s*=\s*["']([^"']+)["']|url\(\s*["']?([^"')]+)["']?\s*\)|["'](assets\/[^"']+)["']/gi;
+const RE = /(?:src|href|data-src|poster|content|srcset|imagesrcset)\s*=\s*["']([^"']+)["']|url\(\s*["']?([^"')]+)["']?\s*\)|["'](assets\/[^"']+)["']/gi;
 
 for (const f of pageFiles) {
   const txt = fs.readFileSync(path.join(ROOT, f), 'utf8');
   let m;
   while ((m = RE.exec(txt))) {
-    let u = m[1] || m[2] || m[3];
-    if (!u) continue;
-    if (/^(https?:|data:|blob:|mailto:|tel:|#|\/\/)/i.test(u)) continue;
-    u = decodeURIComponent(u.split('#')[0].split('?')[0]).replace(/^\.\//, '').replace(/^\//, '');
-    if (!u) continue;
-    if (!refs.has(u)) refs.set(u, f);
+    const raw = m[1] || m[2] || m[3];
+    if (!raw) continue;
+    // srcset "a.jpg 600w, b.jpg 1200w" -> tek tek yollar
+    const parts = raw.includes(',') && /\d+[wx]\s*(,|$)/.test(raw)
+      ? raw.split(',').map(s => s.trim().split(/\s+/)[0])
+      : [raw];
+    for (let u of parts) {
+      if (!u) continue;
+      if (/^(https?:|data:|blob:|mailto:|tel:|#|\/\/)/i.test(u)) continue;
+      u = decodeURIComponent(u.split('#')[0].split('?')[0]).replace(/^\.\//, '').replace(/^\//, '');
+      if (!u) continue;
+      if (!refs.has(u)) refs.set(u, f);
+    }
   }
 }
 
