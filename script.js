@@ -2,6 +2,68 @@
 document.body.classList.add('light-mode');
 document.body.classList.add('tasarim-1');
 
+/* --- Performans: agir varliklari kritik yoldan cikar ---
+   1) Hero videosu: poster hemen gorunur, gercek kaynak sayfa yuklendikten sonra eklenir.
+   2) model-viewer (~283 KB): yalnizca AR bolumu goruse yaklasinca indirilir.
+   Ikisi de sayfanin ilk boyanmasini geciktirmesin diye ayrilmistir. */
+(function deferHeavyAssets() {
+    function loadHeroVideo() {
+        const video = document.querySelector('video.hero-video-bg[data-src]');
+        if (!video) return;
+        video.src = video.dataset.src;
+        delete video.dataset.src;
+        video.load();
+        const p = video.play();
+        if (p && p.catch) p.catch(() => { /* otomatik oynatma engellendiyse poster kalir */ });
+    }
+
+    function loadModelViewer() {
+        const wrapper = document.querySelector('model-viewer');
+        if (!wrapper || document.getElementById('model-viewer-script')) return;
+        const s = document.createElement('script');
+        s.id = 'model-viewer-script';
+        s.type = 'module';
+        s.src = 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';
+        document.head.appendChild(s);
+    }
+
+    function watchArSection() {
+        const target = document.querySelector('model-viewer');
+        if (!target) return;
+
+        // AR bolumu hero'nun hemen altinda oldugu icin pay birakmiyoruz:
+        // pay verilince bolum daha sayfa acilirken "yakin" sayilip erken yukleniyor.
+        let done = false;
+        function trigger() {
+            if (done) return;
+            done = true;
+            window.removeEventListener('scroll', onScroll);
+            loadModelViewer();
+        }
+        function onScroll() {
+            const r = target.getBoundingClientRect();
+            if (r.top < window.innerHeight && r.bottom > 0) trigger();
+        }
+
+        if ('IntersectionObserver' in window) {
+            // IntersectionObserver ilk durumu da bildirir; ayri bir baslangic kontrolu gerekmez
+            const io = new IntersectionObserver((entries) => {
+                if (entries.some(e => e.isIntersecting)) { io.disconnect(); trigger(); }
+            });
+            io.observe(target);
+        } else {
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        }
+    }
+
+    if (document.readyState === 'complete') {
+        loadHeroVideo(); watchArSection();
+    } else {
+        window.addEventListener('load', () => { loadHeroVideo(); watchArSection(); }, { once: true });
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('main-header');
     const scrollProgress = document.querySelector('.scroll-progress');
@@ -130,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg.style.transform = `translate3d(0, ${yOffset}px, 0)`;
             }
         });
-    });
+    }, { passive: true });   // dinleyici scroll'u bloklamasin
 
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -145,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileMenuToggle && navLinks) {
         const closeMenu = () => {
             mobileMenuToggle.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
             navLinks.classList.remove('active');
             navOverlay.classList.remove('active');
             document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
@@ -153,6 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenuToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             const isActive = mobileMenuToggle.classList.toggle('active');
+            mobileMenuToggle.setAttribute('aria-expanded', String(isActive));
             navLinks.classList.toggle('active');
             navOverlay.classList.toggle('active');
             if (!isActive) closeMenu();

@@ -10,13 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Yazi tipleri render'i bloklamasin; display=swap sayesinde once yedek font gorunur -->
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <!-- Font Awesome sadece birkac ikon icin kullaniliyor: render'i bloklamasin -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+    <script defer src="https://unpkg.com/lucide@1.29.0/dist/umd/lucide.min.js"></script>
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!-- model-viewer (~283 KB) yalnizca AR bolumune yaklasilinca yuklenir; bkz. script.js -->
 </head>
 
 <body class="home-page">
@@ -60,7 +72,7 @@
                 <li><a href="javascript:void(0)" class="btn btn-primary btn-small basvuru-trigger">Online Başvuru</a></li>
             </ul>
 
-            <button class="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" aria-label="Menuyu ac/kapat" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -89,10 +101,11 @@
                     </div>
             </div>
             <div class="hero-image-wrap">
-                <video autoplay muted loop playsinline class="hero-video-bg">
-                    <source src="assets/belgesem.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <!-- Video kritik yolu bloklamasin: once poster gorunur, kaynak sayfa
+                     yuklendikten sonra script.js tarafindan eklenir -->
+                <video autoplay muted loop playsinline preload="none"
+                    poster="assets/hero-poster.webp" data-src="assets/belgesem.mp4"
+                    class="hero-video-bg" aria-hidden="true"></video>
             </div>
         </section>
 
@@ -160,106 +173,106 @@
                 <!-- Row 1 -->
                 <div class="references-slider">
                     <div class="references-track">
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/POLT.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/POLT.webp' alt='Referans' loading='lazy' decoding='async' width='180' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PROGEN.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PROGEN.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PİRİM.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PİRİM.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/QUA.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/QUA.webp' alt='Referans' loading='lazy' decoding='async' width='263' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/RETEK.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/RETEK.webp' alt='Referans' loading='lazy' decoding='async' width='179' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ROYAL.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ROYAL.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SANX.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SANX.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/seva.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/seva.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SULTAN SERA.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SULTAN SERA.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/sur çlk.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/sur çlk.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE T.O.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SÖKE T.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE UN.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SÖKE UN.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKE Z.O.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SÖKE Z.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SÖKTAŞ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SÖKTAŞ.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='79'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SİBAŞ.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SİBAŞ.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/SİBELCO.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/SİBELCO.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='96'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/TARİŞ SÖKE.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/TARİŞ SÖKE.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/TARİŞ.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/TARİŞ.webp' alt='Referans' loading='lazy' decoding='async' width='88' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/TEKMEN.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/TEKMEN.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/TESPO.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/TESPO.webp' alt='Referans' loading='lazy' decoding='async' width='276' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Titan-Asia.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Titan-Asia.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Toprak-Tekstil.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Toprak-Tekstil.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/TUĞBA.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/TUĞBA.webp' alt='Referans' loading='lazy' decoding='async' width='195' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/UÇAK TEKSTİL.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/UÇAK TEKSTİL.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/UĞUR.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/UĞUR.webp' alt='Referans' loading='lazy' decoding='async' width='268' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/woodart.jpg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/woodart.webp' alt='Referans' loading='lazy' decoding='async' width='139' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Yagmur-Tekstil.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Yagmur-Tekstil.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Yespan.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Yespan.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/YILMAZ YAPI MARKET.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/YILMAZ YAPI MARKET.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/YÜKSEL SERAMİK.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/YÜKSEL SERAMİK.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ZER ZEYTİN.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ZER ZEYTİN.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ziraat odası.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ziraat odası.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ZORLU.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ZORLU.webp' alt='Referans' loading='lazy' decoding='async' width='134' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇALLI YAPI.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÇALLI YAPI.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇAĞDAŞ CAM.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÇAĞDAŞ CAM.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇEVİK GIDA.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÇEVİK GIDA.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇİMSTNE.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÇİMSTNE.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÇİNE.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÇİNE.webp' alt='Referans' loading='lazy' decoding='async' width='110' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ÖZEK VİNÇ.PNG'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ÖZEK VİNÇ.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/İLGİ TARIM.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/İLGİ TARIM.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/İMFALT.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/İMFALT.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/İNSUS.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/İNSUS.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='88'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/İYA ORGANİK.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/İYA ORGANİK.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/İZELMAK.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/İZELMAK.webp' alt='Referans' loading='lazy' decoding='async' width='144' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞAHİNLER.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ŞAHİNLER.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞIRLAN SU.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ŞIRLAN SU.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞOK.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ŞOK.webp' alt='Referans' loading='lazy' decoding='async' width='185' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ŞİŞE CM.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ŞİŞE CM.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='108'>
                         </div>
                         <!-- Duplicated -->
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/POLT.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/POLT.webp' alt='Referans' loading='lazy' decoding='async' width='180' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PROGEN.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PROGEN.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
                     </div>
                 </div>
@@ -268,224 +281,224 @@
         <!-- Row 2 -->
                 <div class="references-slider">
                     <div class="references-track">
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GRANİTAŞ.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GRANİTAŞ.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜMÜŞKÖY.webp'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GÜMÜŞKÖY.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜRİŞ.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GÜRİŞ.webp' alt='Referans' loading='lazy' decoding='async' width='197' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜVEN TARIM.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GÜVEN TARIM.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/HAUS.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/HAUS.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='117'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/hcc-maden-makina (1).gif'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/hcc-maden-makina (1).webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/HEDEF K.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/HEDEF K.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (1).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (1).jpeg.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (1).png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (1).png.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (2).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (2).jpeg.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (2).png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (2).png.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (3).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (3).webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (4).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (4).webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (5).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (5).webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir (6).jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir (6).webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir.jpeg.webp' alt='Referans' loading='lazy' decoding='async' width='128' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/indir.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/indir.png.webp' alt='Referans' loading='lazy' decoding='async' width='128' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/JANTSA.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/JANTSA.webp' alt='Referans' loading='lazy' decoding='async' width='256' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/JMW.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/JMW.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/kaltun.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/kaltun.webp' alt='Referans' loading='lazy' decoding='async' width='180' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KARMAK.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KARMAK.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='83'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KARPUZLU.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KARPUZLU.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KIRLIOĞLU.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KIRLIOĞLU.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KONTEK LOGO.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KONTEK LOGO.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KOÇARLI Z.O.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KOÇARLI Z.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KOÇARLI.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KOÇARLI.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/kurumsal_logo.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/kurumsal_logo.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KUŞADASI T.O.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KUŞADASI T.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/KÇS.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/KÇS.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='90'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/LİFTUP.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/LİFTUP.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MAKOFİX.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MAKOFİX.webp' alt='Referans' loading='lazy' decoding='async' width='228' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MAROLİ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MAROLİ.webp' alt='Referans' loading='lazy' decoding='async' width='228' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MAVİ BAYRAK.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MAVİ BAYRAK.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MENDERES JEOTERMAİL.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MENDERES JEOTERMAİL.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MONDİAL.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MONDİAL.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='57'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/MİKROMAN.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/MİKROMAN.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/NAR.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/NAR.webp' alt='Referans' loading='lazy' decoding='async' width='111' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/NAZİLLİ T.O.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/NAZİLLİ T.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/NETLOG.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/NETLOG.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='78'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/NGT.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/NGT.webp' alt='Referans' loading='lazy' decoding='async' width='195' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/OCEANMEC.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/OCEANMEC.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/OKT.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/OKT.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/OLİVE PRİNA.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/OLİVE PRİNA.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Orge.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Orge.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ORTAKLAR OSB.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ORTAKLAR OSB.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PAGYSA.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PAGYSA.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='100'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PG HOLDİNG.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PG HOLDİNG.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/pgkimya.jpg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/pgkimya.webp' alt='Referans' loading='lazy' decoding='async' width='139' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/PGR.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/PGR.webp' alt='Referans' loading='lazy' decoding='async' width='240' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Polat.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Polat.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
                         <!-- Duplicated -->
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GRANİTAŞ.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GRANİTAŞ.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GÜMÜŞKÖY.webp'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GÜMÜŞKÖY.webp'
                                 alt='Referans'></div>
                     </div>
                 </div>
                 <!-- Row 3 -->
                 <div class="references-slider">
                     <div class="references-track">
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/1111.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/1111.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ABALIOĞLUU.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ABALIOĞLUU.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ADRİMAK.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ADRİMAK.webp' alt='Referans' loading='lazy' decoding='async' width='255' height='80'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ADÜ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ADÜ.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/AKKİM.webp' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/AKKİM.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='116'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ALKAN PALET.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ALKAN PALET.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Alpler.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Alpler.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/amberkoku.jpg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/amberkoku.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ANDA BARUT.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ANDA BARUT.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ANDROS.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ANDROS.webp' alt='Referans' loading='lazy' decoding='async' width='238' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/AYDN PULLK.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/AYDN PULLK.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/AYZİN.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/AYZİN.webp' alt='Referans' loading='lazy' decoding='async' width='238' height='88'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BALKANN.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BALKANN.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BANVİT.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BANVİT.webp' alt='Referans' loading='lazy' decoding='async' width='188' height='111'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/baTI KİPAŞ.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/baTI KİPAŞ.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BAŞÖZ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BAŞÖZ.webp' alt='Referans' loading='lazy' decoding='async' width='240' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BEGEÇ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BEGEÇ.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='108'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BETEK BOYA.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BETEK BOYA.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/bilalsabuncu.jpg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/bilalsabuncu.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BOZDOĞAN BEL.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BOZDOĞAN BEL.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BULUT.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BULUT.webp' alt='Referans' loading='lazy' decoding='async' width='273' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BİZİM TOPTAN.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BİZİM TOPTAN.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/BİÇER.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/BİÇER.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='101'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/CEVA L.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/CEVA L.webp' alt='Referans' loading='lazy' decoding='async' width='248' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/D MARİN.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/D MARİN.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DALAMAN HAVALİMANI.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DALAMAN HAVALİMANI.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DCM-1.jpg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DCM-1.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DCM-1.jpg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DCM-1.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DENİZ FOOD.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DENİZ FOOD.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DHMİ_logo.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DHMİ_logo.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DSİ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DSİ.webp' alt='Referans' loading='lazy' decoding='async' width='159' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DVS.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DVS.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/DİDİM T.O.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/DİDİM T.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ECC.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ECC.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELE Z.O.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EFELE Z.O.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELER ÇİFTLİĞİ.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EFELER ÇİFTLİĞİ.jpeg.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EFELER ÇİFTLİĞİ.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EFELER ÇİFTLİĞİ.png.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE OLUŞUM.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EGE OLUŞUM.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE ROYAL.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EGE ROYAL.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EGE ULAŞIM.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EGE ULAŞIM.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EKER.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EKER.webp' alt='Referans' loading='lazy' decoding='async' width='170' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EROĞLU.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EROĞLU.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ESAN.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ESAN.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EYS.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EYS.webp' alt='Referans' loading='lazy' decoding='async' width='191' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/EYSİM.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/EYSİM.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/FİBER.jpg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/FİBER.webp' alt='Referans' loading='lazy' decoding='async' width='235' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GEOLİTE.jpeg'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GEOLİTE.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GIDA TAY.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GIDA TAY.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/Gidatay.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/Gidatay.webp' alt='Referans' loading='lazy' decoding='async' width='280' height='93'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/GRAMAS.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/GRAMAS.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
                         <!-- Duplicated for infinite effect -->
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/1111.jpeg' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/1111.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ABALIOĞLUU.png'
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ABALIOĞLUU.webp'
                                 alt='Referans'></div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ADRİMAK.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ADRİMAK.webp' alt='Referans' loading='lazy' decoding='async' width='255' height='80'>
                         </div>
-                        <div class='reference-item'><img src='assets/referanslarımız/logoss/ADÜ.png' alt='Referans'>
+                        <div class='reference-item'><img src='assets/referanslarımız/logoss-webp/ADÜ.webp' alt='Referans' loading='lazy' decoding='async' width='120' height='120'>
                         </div>
                     </div>
                 </div>
@@ -543,7 +556,7 @@
                         </div>
 
                         <div class="map-container mt-30">
-                            <iframe
+                            <iframe title="BELGESEM konumu - Google Haritalar"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.3771685442516!2d27.8670872!3d37.8280552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b92b68532a2099%3A0x2eb2098c8e770d55!2sBELGESEM%20%C4%B0%C5%9F%20ve%20Tar%C4%B1m%20Makineleri%20Oper%C3%B6r%20Yeti%C5%9Ftirme%20%26%20Belgelendirme%20Kursu!5e0!3m2!1str!2str!4v1778239970004!5m2!1str!2str"
                                 width="100%" height="250"
                                 style="border:0; border-radius: 20px; filter: grayscale(1) opacity(0.8);"
@@ -672,14 +685,18 @@
                     <p id="modal-desc">Detaylı 3D model görünümü.</p>
                 </div>
             </div>
-            <button class="nav-btn prev-btn"><i data-lucide="chevron-left"></i></button>
-            <button class="nav-btn next-btn"><i data-lucide="chevron-right"></i></button>
+            <button class="nav-btn prev-btn" aria-label="Onceki"><i data-lucide="chevron-left"></i></button>
+            <button class="nav-btn next-btn" aria-label="Sonraki"><i data-lucide="chevron-right"></i></button>
         </div>
     </div>
 
     <script src="script.js"></script>
     <script>
-        lucide.createIcons();
+        // lucide "defer" ile yuklendigi icin DOM hazir olunca cagriliyor
+        // (defer'li script'ler DOMContentLoaded'dan once sirayla calisir)
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.lucide) lucide.createIcons();
+        });
     </script>
 </body>
 

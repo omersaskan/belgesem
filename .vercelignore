@@ -29,3 +29,6 @@ assets/new_photos
 assets/new_machinery_images
 assets/makine_resimleri
 assets/models
+
+# Referans logolarinin optimize edilmemis kaynaklari; site logoss-webp/ kullaniyor
+assets/referanslarımız/logoss/
