@@ -1,0 +1,31 @@
+# Vercel deploy'una girmeyecek dosyalar (repodan silinmez, sadece yuklenmez)
+
+# Gelistirme ortami
+node_modules
+scratch
+.claude
+
+# Tek seferlik bakim/duzeltme scriptleri
+*.ps1
+fix.js
+fix_*.js
+fetch_images.py
+fetch_news.js
+inspect_decal.js
+scale_glb.js
+scale_and_mask.js
+update_images.js
+package.json
+package-lock.json
+
+# Gelistirme notlari ve ara veri
+inspect.txt
+logos_list.txt
+machinery_info.txt
+image_results.json
+
+# Sitede hicbir yerden referans verilmeyen gorsel arsivleri (~375 MB)
+assets/new_photos
+assets/new_machinery_images
+assets/makine_resimleri
+assets/models

@@ -1,1 +1,5 @@
 .vercel
+
+# Yeniden uretilebilen buyuk ara dosyalar (scratch/build_temp_glb.js + Blender uretir)
+scratch/forklift_temp.glb
+scratch/check.usda
