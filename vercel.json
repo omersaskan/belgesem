@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "comment": "Gorsel/video/3B model: nadiren degisir, 30 gun onbellek",
       "source": "/assets/(.*)",
       "headers": [
         {
@@ -12,7 +11,6 @@
       ]
     },
     {
-      "comment": "CSS/JS: elle deploy sonrasi hizli yayilsin diye kisa tutuldu",
       "source": "/(.*)\\.(css|js)",
       "headers": [
         {
