@@ -883,6 +883,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Hatalı Park İhlalleri: Trafik ve belediye koordineli otopark çekim kuralları ve operasyonları"
             ],
             workAreas: "Mekanik arıza servisleri, trafik kazası tahliye operasyonları, karayolu ve otoban yol yardım hizmetleri, otomotiv bayi ve filo taşımacılığı, belediye ve emniyet otopark çekim faaliyetleri."
+        },
+        "TOWCAR - PUSHBACK ÇEKİCİSİ": {
+            category: "İş Makinesi",
+            duration: "60 Saat Eğitim",
+            imageWeb: "assets/web/towcar_pushback.jpg",
+            imageMobile: "assets/mobile/towcar_pushback.jpg",
+            intro: "Towcar - Pushback Çekicisi / Traktörü; uçağı itmek veya çekmek için kullanılan, çok yüksek tork gücüne sahip, yere yakın ve ağır özel bir havalimanı iş makinesidir.",
+            objectives: [
+                "Uçak pushback (geri itme) ve çeki demiri (towbar) bağlantı prosedürlerini uygulama",
+                "Havalimanı apron sahasında ve körük çevresinde emniyetli manevra ve sürüş",
+                "Uçak yer hizmetleri, marshalling ve headset (kulaklık) haberleşme protokolleri",
+                "Farklı gövde tiplerindeki uçaklar için tork, çekme açısı ve hız limitlerine tam uyum"
+            ],
+            workAreas: "Yolcu Terminalleri Önü (Gates / Körük Alanları), Açık Park Pozisyonları (Remote Stands), Bakım Hangarları ve Apronu, Kargo Terminalleri, De-Icing (Buz Çözme) İstasyonları."
         }
     };
 
