@@ -868,6 +868,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Rüzgar hızı ve çevre koşullarına göre güvenli çalışma"
             ],
             workAreas: "Yüksek katlı bina inşaatları, büyük ölçekli şantiyeler ve liman operasyonları."
+        },
+        "OTO KURTARMA": {
+            category: "İş Makinesi",
+            duration: "60 Saat Eğitim",
+            imageWeb: "assets/web/oto_kurtarma.jpg",
+            imageMobile: "assets/mobile/oto_kurtarma.jpg",
+            intro: "Oto kurtarma çekici; kaza yapan, arızalanan, yakıtı biten veya yanlış park edilen motorlu araçların güvenli bir şekilde taşınmasını sağlayan özel donanımlı bir iş makinesidir. Halk arasında \"kurtarıcı\" veya \"çekici\" olarak da bilinen bu araçlar, yolda kalan sürücülerin imdadına yetişen en temel yol yardım unsurlarından biridir.",
+            objectives: [
+                "Mekanik Arızalar: Motor bozulması, şanzıman kilitlenmesi veya akü bitmesi nedeniyle yürüyemeyen araçların güvenli taşınması",
+                "Trafik Kazaları: Çarpışma sonucu ağır hasar alan veya hareket kabiliyetini yitiren araçların olay yerinden tahliyesi",
+                "Yakıt ve Lastik Sorunları: Yolda kalan sürücülere profesyonel yol yardım ve vinçleme desteği",
+                "Filo ve Bayi Sevkiyatları: Çoklu çekiciler (oto taşıyıcılar) ile sıfır kilometre araçların bayilere sevkiyatı",
+                "Hatalı Park İhlalleri: Trafik ve belediye koordineli otopark çekim kuralları ve operasyonları"
+            ],
+            workAreas: "Mekanik arıza servisleri, trafik kazası tahliye operasyonları, karayolu ve otoban yol yardım hizmetleri, otomotiv bayi ve filo taşımacılığı, belediye ve emniyet otopark çekim faaliyetleri."
         }
     };
 
