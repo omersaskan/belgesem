@@ -1,0 +1,43 @@
+﻿# BELGESEM - Sunucu Yapılandırması (.htaccess)
+
+# 1. 3D Model ve AR (Artırılmış Gerçeklik) MIME Türleri
+<IfModule mod_mime.c>
+    AddType model/gltf-binary .glb
+    AddType model/gltf+json .gltf
+    AddType model/vnd.usdz+zip .usdz
+    AddType model/usdz+zip .usdz
+    AddType image/webp .webp
+    AddType video/mp4 .mp4
+    AddType video/webm .webm
+    AddType font/woff2 .woff2
+    AddType font/woff .woff
+</IfModule>
+
+# 2. CORS Başlıkları (Android Scene Viewer, iOS Quick Look ve WebXR için zorunludur)
+<IfModule mod_headers.c>
+    <FilesMatch "\.(glb|gltf|usdz|woff|woff2|ttf|eot|svg|jpg|jpeg|png|webp|mp4|webm)$">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "GET, OPTIONS"
+        Header set Access-Control-Allow-Headers "*"
+    </FilesMatch>
+</IfModule>
+
+# 3. Tarayıcı Önbellekleme (Performans ve Hız)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType model/gltf-binary "access plus 1 month"
+    ExpiresByType model/vnd.usdz+zip "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType video/mp4 "access plus 1 month"
+</IfModule>
+
+# 4. Gzip Sıkıştırma
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>

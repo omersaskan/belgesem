@@ -23,7 +23,7 @@ document.body.classList.add('tasarim-1');
         const s = document.createElement('script');
         s.id = 'model-viewer-script';
         s.type = 'module';
-        s.src = 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';
+        s.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js';
         document.head.appendChild(s);
     }
 
