@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --primary: #00bfff;
     /* Slightly darker/more saturated than #00f2ff for better visibility */
     /* Original Cyber Glass Cyan */
@@ -3530,6 +3530,40 @@ body.light-mode .form-card textarea {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.chat-send-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+    display: block;
+}
+
+.bot-avatar svg {
+    width: 22px;
+    height: 22px;
+    stroke: #25d366;
+    display: block;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.close-chat svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+    display: block;
 }
 
 .chat-options {
@@ -4273,4 +4307,4 @@ body.light-mode .chatbot-input-area input {
 
 .read-more:hover {
     gap: 12px;
-}
+}
